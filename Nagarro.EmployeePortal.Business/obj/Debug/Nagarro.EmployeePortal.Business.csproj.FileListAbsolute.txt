@@ -1,0 +1,151 @@
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Business.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\FluentValidation.xml
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\da\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\de\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\es\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\fi\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\fr\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\it\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\ko\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\mk\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\nl\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\pl\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\pt\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\ru\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\sv\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\bin\Debug\tr\FluentValidation.resources.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.csprojResolveAssemblyReference.cache
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.Business\obj\Debug\Nagarro.EmployeePortal.Business.pdb

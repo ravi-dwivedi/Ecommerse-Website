@@ -1,0 +1,71 @@
+﻿@model Ecommerce.Item
+
+@{
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        Url = Url.Action("AddItem"),
+        HttpMethod = "POST",
+        OnSuccess = "showSavedResult(data)",
+        OnFailure = "onFailure(data)"
+    };
+}
+
+@using (Ajax.BeginForm(ajaxOpts))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+
+    <fieldset>
+        <legend>Item</legend>
+
+
+        <div class="editor-label">
+            Category
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CategotyId", (IEnumerable<SelectListItem>)ViewBag.Categories, new { id = "cat-dropDown", onchange = "catDropDownChanged()" })
+
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SubCategotyId)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("SubCategotyId", (IEnumerable<SelectListItem>)ViewBag.subcategory)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ItemName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ItemName)
+            @Html.ValidationMessageFor(model => model.ItemName)
+        </div>
+
+      
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<script type="text/javascript">
+function catDropDownChanged() {
+        var categoryId = $('#cat-dropDown :selected').val().trim();
+        if (categoryId != "") {
+            $.ajax({
+                url: 'Ecommerce/GetSubCategoryDropDownList',
+                type: 'get',
+                data: { id: categoryId },
+                success: function (data) {
+                    $('#SubCategotyId').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $('#SubCategotyId').append($('<option></option>').val(data[i].Value).html(data[i].Text));
+                    }
+                }
+            });
+        }
+    }
+</script>

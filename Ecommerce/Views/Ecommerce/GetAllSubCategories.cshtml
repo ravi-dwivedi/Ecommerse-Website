@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Ecommerce.SubCategory>
+
+@{
+    ViewBag.Title = "GetAllSubCategories";
+}
+
+<ul>
+    @foreach (var item in Model)
+    {
+
+        <li class="btn-link" style="background-color:yellow;width:200px;border-color:black;border-spacing:10px">
+            <button class="Ajax_GetAllItems btn btn-success" value="@item.SubCategotyId" style="width:200px;border:solid;background-color:blue">@item.SubCategoryName</button>
+
+    </li>
+
+    }
+
+</ul>
+<script type="text/javascript">
+
+    $(function () {
+        $(".Ajax_GetAllItems").click(function () {
+            var element = $(this);
+            var info = element.val();
+            $.ajax({
+                url: "Ecommerce/GetAllSubCategoriesItems",
+                type: "GET",
+                data: { id: info },
+                success: function (data) {
+                    $('#itemlist').html(data);
+                    var arr = $('#addItem').attr('href').split('?');
+                    var href = "";
+                    if (arr[1] != null) {
+                        href = arr[0] + '/' + info;
+                    }
+                    else {
+                        var arr = $('#addItem').attr('href').split('/');
+                        href = "/" + arr[1] + "/" + arr[2] + "/" + info;
+                    }
+                    $("#addItem").attr('href', href)
+                    $("#addItem").removeAttr("disabled");
+
+
+                    var arr = $('#editSubCategory').attr('href').split('?');
+                    var href = "";
+                    if (arr[1] != null) {
+                        href = arr[0] + '/' + info;
+
+                    }
+                    else {
+                        var arr = $('#editSubCategory').attr('href').split('/');
+                        href = "/" + arr[1] + "/" + arr[2] + "/" + info;
+                    }
+                    $("#editSubCategory").attr('href', href)
+                    $("#editSubCategory").removeAttr("disabled");
+
+
+                    var arr = $('#deleteSubCategory').attr('href').split('?');
+                    var href = "";
+                    if (arr[1] != null) {
+                        href = arr[0] + '/' + info;
+
+                    }
+                    else {
+                        var arr = $('#deleteSubCategory').attr('href').split('/');
+                        href = "/" + arr[1] + "/" + arr[2] + "/" + info;
+                    }
+                    $("#deleteSubCategory").attr('href', href)
+                    $("#deleteSubCategory").removeAttr("disabled");
+
+                }
+            });
+            return false;
+        });
+    });
+
+</script>
+<script type="text/javascript" src="~/Scripts/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+    function displayItems(data) {
+        $('#itemlist').html(data);
+    }
+</script>

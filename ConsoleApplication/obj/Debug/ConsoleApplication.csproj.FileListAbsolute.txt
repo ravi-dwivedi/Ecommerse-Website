@@ -1,0 +1,8 @@
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+E:\Nagarro.Exam\Nagarro.Exam\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache

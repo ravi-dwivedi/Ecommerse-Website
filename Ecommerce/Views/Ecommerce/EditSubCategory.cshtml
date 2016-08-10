@@ -1,0 +1,36 @@
+﻿@model Ecommerce.SubCategory
+
+@{
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        Url = Url.Action("EditSubCategory"),
+        HttpMethod = "POST",
+        OnSuccess = "showSavedResult(data)",
+        OnFailure = "onFailure(data)"
+    };
+}
+
+@using (Ajax.BeginForm(ajaxOpts))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>Add SubCategory</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SubCategoryName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SubCategoryName)
+            @Html.ValidationMessageFor(model => model.SubCategoryName)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CategotyId", (IEnumerable<SelectListItem>)ViewBag.Categories)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}

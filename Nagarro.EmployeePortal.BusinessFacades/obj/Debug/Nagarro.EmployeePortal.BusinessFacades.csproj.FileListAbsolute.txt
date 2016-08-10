@@ -1,0 +1,49 @@
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+F:\Nagarro\Freshers-Training\DotNetCode\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal Final\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal 12\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\Employee Portal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+C:\Users\utpalchowdhury\Desktop\MVC Employee Portal\Nagarro.EmployeePortal Main\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\bin\Debug\Nagarro.EmployeePortal.Shared.pdb
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.csprojResolveAssemblyReference.cache
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.dll
+E:\Nagarro.Exam\Nagarro.Exam\Nagarro.EmployeePortal.BusinessFacades\obj\Debug\Nagarro.EmployeePortal.BusinessFacades.pdb

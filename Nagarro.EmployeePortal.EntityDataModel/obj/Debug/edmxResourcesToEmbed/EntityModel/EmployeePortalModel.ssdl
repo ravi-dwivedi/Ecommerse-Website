@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeePortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+    </Key>
+    <Property Name="DepartmentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DepartmentId" Type="int" Nullable="false" />
+    <Property Name="DateOfJoining" Type="datetime" />
+    <Property Name="IsActive" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IssueHistories">
+    <Key>
+      <PropertyRef Name="HistoryId" />
+    </Key>
+    <Property Name="HistoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="DateModified" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="AssignedTo" Type="int" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Issues">
+    <Key>
+      <PropertyRef Name="IssueId" />
+    </Key>
+    <Property Name="IssueId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="DatePosted" Type="datetime" Nullable="false" />
+    <Property Name="PostedBy" Type="int" Nullable="false" />
+    <Property Name="AssignedTo" Type="int" Nullable="false" />
+    <Property Name="Status" Type="smallint" Nullable="false" />
+    <Property Name="Priority" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logins">
+    <Key>
+      <PropertyRef Name="LoginName" />
+    </Key>
+    <Property Name="LoginName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Role" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="EmployeeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notices">
+    <Key>
+      <PropertyRef Name="NoticeId" />
+    </Key>
+    <Property Name="NoticeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="ExpirationDate" Type="datetime" Nullable="false" />
+    <Property Name="PostedBy" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Employees_Departments_DepartmentId">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Employees_AssignedTo">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="IssueHistories" Type="Self.IssueHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="IssueHistories">
+        <PropertyRef Name="AssignedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Employees_ModifiedBy">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="IssueHistories" Type="Self.IssueHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="IssueHistories">
+        <PropertyRef Name="ModifiedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Issues_IssueId">
+    <End Role="Issues" Type="Self.Issues" Multiplicity="1" />
+    <End Role="IssueHistories" Type="Self.IssueHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Issues">
+        <PropertyRef Name="IssueId" />
+      </Principal>
+      <Dependent Role="IssueHistories">
+        <PropertyRef Name="IssueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Employees_AssignedTo">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="AssignedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Employees_PostedBy">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Issues">
+        <PropertyRef Name="PostedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Logins_Employees_EmployeeId">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Logins" Type="Self.Logins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Logins">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notices_Employees_PostedBy">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Notices" Type="Self.Notices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Notices">
+        <PropertyRef Name="PostedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AddEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="employeeId" Type="int" Mode="InOut" />
+    <Parameter Name="employeeCode" Type="varchar" Mode="In" />
+    <Parameter Name="dateOfJoining" Type="datetime" Mode="In" />
+    <Parameter Name="firstName" Type="varchar" Mode="In" />
+    <Parameter Name="lastName" Type="varchar" Mode="In" />
+    <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+    <Parameter Name="departmentID" Type="int" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Role" Type="char" Mode="In" />
+  </Function>
+  <Function Name="AddIssue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="issueId" Type="int" Mode="InOut" />
+    <Parameter Name="title" Type="varchar" Mode="In" />
+    <Parameter Name="description" Type="varchar" Mode="In" />
+    <Parameter Name="priority" Type="smallint" Mode="In" />
+    <Parameter Name="status" Type="smallint" Mode="In" />
+    <Parameter Name="raisedBy" Type="int" Mode="In" />
+    <Parameter Name="assignedTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AddNotice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="title" Type="varchar" Mode="In" />
+    <Parameter Name="description" Type="varchar" Mode="In" />
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="expirationDate" Type="datetime" Mode="In" />
+    <Parameter Name="postedBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetActiveNotices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetAllEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetAllIssues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetAllNotices" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetAllOpenIssues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="employeeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetIssue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="issueID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetNotice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="noticeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetUserOpenIssues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="loginName" Type="varchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UpdateEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="employeeId" Type="int" Mode="In" />
+    <Parameter Name="firstName" Type="varchar" Mode="In" />
+    <Parameter Name="lastName" Type="varchar" Mode="In" />
+    <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+    <Parameter Name="email" Type="varchar" Mode="In" />
+    <Parameter Name="departmentID" Type="int" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UpdateIssue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IssueId" Type="int" Mode="In" />
+    <Parameter Name="Title" Type="varchar" Mode="In" />
+    <Parameter Name="Description" Type="varchar" Mode="In" />
+    <Parameter Name="status" Type="smallint" Mode="In" />
+    <Parameter Name="priority" Type="smallint" Mode="In" />
+    <Parameter Name="Comments" Type="varchar" Mode="In" />
+    <Parameter Name="PostedBy" Type="int" Mode="In" />
+    <Parameter Name="AssignedTo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateNotice" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="noticeId" Type="int" Mode="In" />
+    <Parameter Name="title" Type="varchar" Mode="In" />
+    <Parameter Name="description" Type="varchar" Mode="In" />
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="expirationDate" Type="datetime" Mode="In" />
+  </Function>
+  <EntityContainer Name="EmployeePortalModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IssueHistories" EntityType="Self.IssueHistories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Issues" EntityType="Self.Issues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logins" EntityType="Self.Logins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notices" EntityType="Self.Notices" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Employees_Departments_DepartmentId" Association="Self.FK_Employees_Departments_DepartmentId">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Employees_AssignedTo" Association="Self.FK_IssueHistories_Employees_AssignedTo">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="IssueHistories" EntitySet="IssueHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Employees_ModifiedBy" Association="Self.FK_IssueHistories_Employees_ModifiedBy">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="IssueHistories" EntitySet="IssueHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Issues_IssueId" Association="Self.FK_IssueHistories_Issues_IssueId">
+      <End Role="Issues" EntitySet="Issues" />
+      <End Role="IssueHistories" EntitySet="IssueHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Employees_AssignedTo" Association="Self.FK_Issues_Employees_AssignedTo">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Employees_PostedBy" Association="Self.FK_Issues_Employees_PostedBy">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Issues" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Logins_Employees_EmployeeId" Association="Self.FK_Logins_Employees_EmployeeId">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Logins" EntitySet="Logins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notices_Employees_PostedBy" Association="Self.FK_Notices_Employees_PostedBy">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Notices" EntitySet="Notices" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

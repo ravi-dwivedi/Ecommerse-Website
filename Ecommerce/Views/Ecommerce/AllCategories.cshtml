@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Ecommerce.Category>
+
+<div style="margin-top:30px">
+    <center>
+            @Ajax.ActionLink("ADD", "InsertSubCategory", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displaySubcategoryModel(data)" }, new { @class = "button btn btn-success",id = "addSubCategory", disabled = "disabled"}) |
+          
+            @Ajax.ActionLink("EDIT", "EditSubCategory", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displaySubcategoryModel(data)" }, new { @class = "button btn btn-warning", id = "editSubCategory", disabled = "disabled" }) |
+      
+            @Ajax.ActionLink("DELETE", "DeleteSubCategory", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displaySubcategoryModel(data)" }, new { @class = "button btn btn-danger", id = "deleteSubCategory", disabled = "disabled" })
+       
+</center>
+</div>
+<div style="margin-top:50px;">
+ 
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <button class="Ajax_GetSubCategories btn btn-success" value="@item.CategotyId" style="width:200px;border:solid;background-color:darkblue">@item.CategoryName</button>
+                    <div id="@item.CategotyId">
+                    </div>
+                </li>
+
+
+            }
+
+        </ul>
+</div>
+<script type="text/javascript">
+
+    $(function () {
+        $(".Ajax_GetSubCategories").click(function () {
+            var element = $(this);
+            var info = element.val();
+                $.ajax({
+                    url: "Ecommerce/GetAllSubCategories",
+                    type: "POST",
+                    data: {id : info},
+                    success: function (data) {
+                        var divId = '#' + info;
+                        a = $.find(divId);
+                        $(a).html(data);
+                        var arr = $('#addSubCategory').attr('href').split('?');
+                        var href = "";
+                        if (arr[1]!=null) {
+                            href = arr[0] + '/' + info;
+                           
+                        }
+                        else
+                        {
+                            var arr = $('#addSubCategory').attr('href').split('/');
+                            href = "/" + arr[1] + "/" + arr[2] + "/" + info;
+                        }
+                        $("#addSubCategory").attr('href', href)
+                        $("#addSubCategory").removeAttr("disabled");
+
+                    }
+                });
+
+
+            return false;
+        });
+    });
+
+</script>
+

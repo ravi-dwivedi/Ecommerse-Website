@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeePortalModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EmployeePortalEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="EmployeePortalModel.Department" />
+    <EntitySet Name="Employees" EntityType="EmployeePortalModel.Employee" />
+    <EntitySet Name="IssueHistories" EntityType="EmployeePortalModel.IssueHistory" />
+    <EntitySet Name="Issues" EntityType="EmployeePortalModel.Issue" />
+    <EntitySet Name="Logins" EntityType="EmployeePortalModel.Login" />
+    <EntitySet Name="Notices" EntityType="EmployeePortalModel.Notice" />
+    <AssociationSet Name="FK_Notices_Employees" Association="EmployeePortalModel.FK_Notices_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Notices" EntitySet="Notices" />
+    </AssociationSet>
+    <FunctionImport Name="AddNotice" ReturnType="Collection(Decimal)">
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="description" Mode="In" Type="String" />
+      <Parameter Name="startDate" Mode="In" Type="DateTime" />
+      <Parameter Name="expirationDate" Mode="In" Type="DateTime" />
+      <Parameter Name="postedBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetAllNotices" ReturnType="Collection(EmployeePortalModel.GetAllNotices_Result)" />
+    <FunctionImport Name="GetEmployee" ReturnType="Collection(EmployeePortalModel.GetEmployee_Result)">
+      <Parameter Name="employeeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetNotice" ReturnType="Collection(EmployeePortalModel.GetNotice_Result)">
+      <Parameter Name="noticeId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Login" ReturnType="Collection(EmployeePortalModel.Login_Result)">
+      <Parameter Name="loginName" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateNotice">
+      <Parameter Name="noticeId" Mode="In" Type="Int32" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="description" Mode="In" Type="String" />
+      <Parameter Name="startDate" Mode="In" Type="DateTime" />
+      <Parameter Name="expirationDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <AssociationSet Name="FK_Employees_Departments" Association="EmployeePortalModel.FK_Employees_Departments">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <FunctionImport Name="AddEmployee">
+      <Parameter Name="employeeId" Mode="InOut" Type="Int32" />
+      <Parameter Name="employeeCode" Mode="In" Type="String" />
+      <Parameter Name="dateOfJoining" Mode="In" Type="DateTime" />
+      <Parameter Name="firstName" Mode="In" Type="String" />
+      <Parameter Name="lastName" Mode="In" Type="String" />
+      <Parameter Name="dateOfBirth" Mode="In" Type="DateTime" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="departmentID" Mode="In" Type="Int32" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="Role" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AddIssue">
+      <Parameter Name="issueId" Mode="InOut" Type="Int32" />
+      <Parameter Name="title" Mode="In" Type="String" />
+      <Parameter Name="description" Mode="In" Type="String" />
+      <Parameter Name="priority" Mode="In" Type="Int16" />
+      <Parameter Name="status" Mode="In" Type="Int16" />
+      <Parameter Name="raisedBy" Mode="In" Type="Int32" />
+      <Parameter Name="assignedTo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetActiveNotices" ReturnType="Collection(EmployeePortalModel.GetActiveNotices_Result)" />
+    <FunctionImport Name="GetAllEmployees" ReturnType="Collection(EmployeePortalModel.GetAllEmployees_Result)" />
+    <FunctionImport Name="GetAllIssues" ReturnType="Collection(EmployeePortalModel.GetAllIssues_Result)" />
+    <FunctionImport Name="GetAllOpenIssues" ReturnType="Collection(EmployeePortalModel.GetAllOpenIssues_Result)" />
+    <FunctionImport Name="GetIssue" ReturnType="Collection(EmployeePortalModel.GetIssue_Result)">
+      <Parameter Name="issueID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserOpenIssues" ReturnType="Collection(EmployeePortalModel.GetUserOpenIssues_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateEmployee">
+      <Parameter Name="employeeId" Mode="In" Type="Int32" />
+      <Parameter Name="firstName" Mode="In" Type="String" />
+      <Parameter Name="lastName" Mode="In" Type="String" />
+      <Parameter Name="dateOfBirth" Mode="In" Type="DateTime" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="departmentID" Mode="In" Type="Int32" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateIssue">
+      <Parameter Name="IssueId" Mode="In" Type="Int32" />
+      <Parameter Name="Title" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="Int16" />
+      <Parameter Name="priority" Mode="In" Type="Int16" />
+      <Parameter Name="Comments" Mode="In" Type="String" />
+      <Parameter Name="PostedBy" Mode="In" Type="Int32" />
+      <Parameter Name="AssignedTo" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <AssociationSet Name="FK_Logins_Employees" Association="EmployeePortalModel.FK_Logins_Employees">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Login" EntitySet="Logins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Employees_PostedBy" Association="EmployeePortalModel.FK_Issues_Employees_PostedBy">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Issue" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Issues_Employees_AssignedTo" Association="EmployeePortalModel.FK_Issues_Employees_AssignedTo">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Issue" EntitySet="Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Employees_AssignedTo" Association="EmployeePortalModel.FK_IssueHistories_Employees_AssignedTo">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="IssueHistory" EntitySet="IssueHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Employees_ModifiedBy" Association="EmployeePortalModel.FK_IssueHistories_Employees_ModifiedBy">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="IssueHistory" EntitySet="IssueHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueHistories_Issues" Association="EmployeePortalModel.FK_IssueHistories_Issues">
+      <End Role="Issue" EntitySet="Issues" />
+      <End Role="IssueHistory" EntitySet="IssueHistories" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+    </Key>
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Employees" Relationship="EmployeePortalModel.FK_Employees_Departments" FromRole="Department" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+    </Key>
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <Property Name="DateOfJoining" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Notices" Relationship="EmployeePortalModel.FK_Notices_Employees" FromRole="Employees" ToRole="Notices" />
+    <NavigationProperty Name="Department" Relationship="EmployeePortalModel.FK_Employees_Departments" FromRole="Employee" ToRole="Department" />
+    <NavigationProperty Name="Logins" Relationship="EmployeePortalModel.FK_Logins_Employees" FromRole="Employee" ToRole="Login" />
+    <NavigationProperty Name="Issues" Relationship="EmployeePortalModel.FK_Issues_Employees_PostedBy" FromRole="Employee" ToRole="Issue" />
+    <NavigationProperty Name="Issues1" Relationship="EmployeePortalModel.FK_Issues_Employees_AssignedTo" FromRole="Employee" ToRole="Issue" />
+    <NavigationProperty Name="IssueHistories" Relationship="EmployeePortalModel.FK_IssueHistories_Employees_AssignedTo" FromRole="Employee" ToRole="IssueHistory" />
+    <NavigationProperty Name="IssueHistories1" Relationship="EmployeePortalModel.FK_IssueHistories_Employees_ModifiedBy" FromRole="Employee" ToRole="IssueHistory" />
+    <Property Name="IsActive" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IssueHistory">
+    <Key>
+      <PropertyRef Name="HistoryId" />
+    </Key>
+    <Property Name="HistoryId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="IssueId" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" Nullable="false" />
+    <Property Name="AssignedTo" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="EmployeePortalModel.FK_IssueHistories_Employees_AssignedTo" FromRole="IssueHistory" ToRole="Employee" />
+    <NavigationProperty Name="Employee1" Relationship="EmployeePortalModel.FK_IssueHistories_Employees_ModifiedBy" FromRole="IssueHistory" ToRole="Employee" />
+    <NavigationProperty Name="Issue" Relationship="EmployeePortalModel.FK_IssueHistories_Issues" FromRole="IssueHistory" ToRole="Issue" />
+  </EntityType>
+  <EntityType Name="Issue">
+    <Key>
+      <PropertyRef Name="IssueId" />
+    </Key>
+    <Property Name="IssueId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="DatePosted" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PostedBy" Type="Int32" Nullable="false" />
+    <Property Name="AssignedTo" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <Property Name="Priority" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="EmployeePortalModel.FK_Issues_Employees_PostedBy" FromRole="Issue" ToRole="Employee" />
+    <NavigationProperty Name="Employee1" Relationship="EmployeePortalModel.FK_Issues_Employees_AssignedTo" FromRole="Issue" ToRole="Employee" />
+    <NavigationProperty Name="IssueHistories" Relationship="EmployeePortalModel.FK_IssueHistories_Issues" FromRole="Issue" ToRole="IssueHistory" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="LoginName" />
+    </Key>
+    <Property Name="LoginName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="EmployeePortalModel.FK_Logins_Employees" FromRole="Login" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Notice">
+    <Key>
+      <PropertyRef Name="NoticeId" />
+    </Key>
+    <Property Name="NoticeId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ExpirationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PostedBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="EmployeePortalModel.FK_Notices_Employees" FromRole="Notices" ToRole="Employees" />
+  </EntityType>
+  <Association Name="FK_Notices_Employees">
+    <End Role="Employees" Type="EmployeePortalModel.Employee" Multiplicity="1" />
+    <End Role="Notices" Type="EmployeePortalModel.Notice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Notices">
+        <PropertyRef Name="PostedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetAllNotices_Result">
+    <Property Type="Int32" Name="NoticeId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="ExpirationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GetEmployee_Result">
+    <Property Type="String" Name="EmployeeCode" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="DepartmentId" Nullable="false" />
+    <Property Type="String" Name="DepartmentName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="DateOfJoining" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetNotice_Result">
+    <Property Type="Int32" Name="NoticeId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="ExpirationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Login_Result">
+    <Property Type="String" Name="LoginName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Role" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+  </ComplexType>
+  <Association Name="FK_Employees_Departments">
+    <End Type="EmployeePortalModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="GetActiveNotices_Result">
+    <Property Type="Int32" Name="NoticeId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="ExpirationDate" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="PostedBy" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllEmployees_Result">
+    <Property Type="Int32" Name="EmployeeId" Nullable="false" />
+    <Property Type="String" Name="EmployeeCode" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="DepartmentId" Nullable="false" />
+    <Property Type="DateTime" Name="DateOfJoining" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GetAllIssues_Result">
+    <Property Type="Int32" Name="IssueId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="DatePosted" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="PostedBy" Nullable="false" />
+    <Property Type="Int32" Name="AssignedTo" Nullable="false" />
+    <Property Type="Int16" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="Priority" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetAllOpenIssues_Result">
+    <Property Type="Int32" Name="IssueId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="DatePosted" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="PostedBy" Nullable="false" />
+    <Property Type="Int32" Name="AssignedTo" Nullable="false" />
+    <Property Type="Int16" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="Priority" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetIssue_Result">
+    <Property Type="Int32" Name="IssueId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="DatePosted" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="PostedBy" Nullable="false" />
+    <Property Type="Int32" Name="AssignedTo" Nullable="false" />
+    <Property Type="Int16" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="Priority" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GetUserOpenIssues_Result">
+    <Property Type="Int32" Name="IssueId" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="2000" />
+    <Property Type="DateTime" Name="DatePosted" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="PostedBy" Nullable="false" />
+    <Property Type="Int32" Name="AssignedTo" Nullable="false" />
+    <Property Type="Int16" Name="Status" Nullable="false" />
+    <Property Type="Int16" Name="Priority" Nullable="false" />
+  </ComplexType>
+  <Association Name="FK_Logins_Employees">
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmployeePortalModel.Login" Role="Login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Login">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Employees_PostedBy">
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmployeePortalModel.Issue" Role="Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Issue">
+        <PropertyRef Name="PostedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Issues_Employees_AssignedTo">
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmployeePortalModel.Issue" Role="Issue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="Issue">
+        <PropertyRef Name="AssignedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Employees_AssignedTo">
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmployeePortalModel.IssueHistory" Role="IssueHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="IssueHistory">
+        <PropertyRef Name="AssignedTo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Employees_ModifiedBy">
+    <End Type="EmployeePortalModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmployeePortalModel.IssueHistory" Role="IssueHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EmployeeId" />
+      </Principal>
+      <Dependent Role="IssueHistory">
+        <PropertyRef Name="ModifiedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueHistories_Issues">
+    <End Type="EmployeePortalModel.Issue" Role="Issue" Multiplicity="1" />
+    <End Type="EmployeePortalModel.IssueHistory" Role="IssueHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Issue">
+        <PropertyRef Name="IssueId" />
+      </Principal>
+      <Dependent Role="IssueHistory">
+        <PropertyRef Name="IssueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

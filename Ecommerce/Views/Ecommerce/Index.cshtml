@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Ecommerce.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="~/Styles/styles.css" />
+<link rel="stylesheet" type="text/css" href="~/Styles/bootstrap.min.css" />
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+ <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")"></script>
+
+    <div class="header ">
+        <h2><center>Ecommerce Site</center></h2>
+    </div>
+    <div class="section-left" >
+
+        @Html.Partial("AllCategories", Model)
+
+    </div>
+    <div class="section-right" id="itemlist">
+
+    </div>
+
+    <div class="footer"></div>
+
+    <a href="#under-construction" class="btn btn-success"  data-toggle="modal"  id="modelbutton" style="display:none"></a>
+
+    <div class="modal fade"  id="under-construction" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="model-body">
+                    <p>Under construction please try again after some time!</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script>
+
+    function displaySubcategoryModel(data) {
+
+       // alert(data);
+        $('#model-body').html(data);
+        document.getElementById('modelbutton').click();
+
+    }
+
+
+    function displayItemModel(data)
+    {
+        $('#model-body').html(data);
+        document.getElementById('modelbutton').click();
+    }
+    function showSavedResult(data)
+    {
+        $('#model-body').html(data);
+        $("#addSubCategory").attr('disabled', 'disabled');
+        $("#addItem").attr('disabled', 'disabled');
+        $("#deleteSubCategory").attr('disabled', 'disabled');
+        $("#deleteItem").attr('disabled', 'disabled');
+        $("#editSubCategory").attr('disabled', 'disabled');
+        $("#editItem").attr('disabled', 'disabled');
+
+    }
+</script>

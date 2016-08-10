@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Ecommerce.Item>
+
+
+<div style="margin-top:30px">
+    <center>
+        @Ajax.ActionLink("ADD", "AddItem", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displayItemModel(data)" }, new { @class = "button btn btn-success", id = "addItem", disabled = "disabled" }) |
+
+        @Ajax.ActionLink("EDIT", "EditItem", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displayItemModel(data)" }, new { @class = "button btn btn-warning", id = "editItem", disabled = "disabled" }) |
+
+        @Ajax.ActionLink("DELETE", "DeleteItem", "Ecommerce", new AjaxOptions { HttpMethod = "GET", OnSuccess = "displayItemModel(data)" }, new { @class = "button btn btn-danger", id = "deleteItem", disabled = "disabled" })
+
+    </center>
+</div>
+<div style="margin-top:50px;">
+    <center>
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ItemName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SubCategotyId)
+                </th>
+                <th>Do Operation</th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SubCategotyId)
+                    </td>
+
+                    <td>
+                        @Html.RadioButton("Edit/Delete", new { id = item.ItemId }, new { id = "isSelected", onchange = "editDelteButtonUpdate(" + item.ItemId + ")" })
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </center>
+</div>
+<script type="text/javascript">
+
+    function editDelteButtonUpdate(itemId)
+    {
+        var arr = $('#editItem').attr('href').split('?');
+        var href = "";
+        if (arr[1] != null) {
+            href = arr[0] + '/' + itemId;
+
+        }
+        else {
+            var arr = $('#editItem').attr('href').split('/');
+            href = "/" + arr[1] + "/" + arr[2] + "/" + itemId;
+        }
+        $("#editItem").attr('href', href)
+        $("#editItem").removeAttr("disabled");
+
+        var arr = $('#deleteItem').attr('href').split('?');
+        var href = "";
+        if (arr[1] != null) {
+            href = arr[0] + '/' + itemId;
+
+        }
+        else {
+            var arr = $('#deleteItem').attr('href').split('/');
+            href = "/" + arr[1] + "/" + arr[2] + "/" + itemId;
+        }
+        $("#deleteItem").attr('href', href)
+        $("#deleteItem").removeAttr("disabled");
+
+    }
+</script>
