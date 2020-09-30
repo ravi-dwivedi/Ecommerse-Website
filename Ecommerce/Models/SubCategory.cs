@@ -7,8 +7,8 @@ namespace Ecommerce
 {
     public class SubCategory
     {
-        public int SubCategotyId { get; set; }
+        public int SubCategoryId { get; set; }
         public string SubCategoryName { get; set; }
-        public int CategotyId { get; set; }
+        public int CategoryId { get; set; }
     }
 }
